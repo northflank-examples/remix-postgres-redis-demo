@@ -126,7 +126,8 @@
               "dockerfile": {
                 "buildEngine": "kaniko",
                 "dockerFilePath": "/Dockerfile",
-                "dockerWorkDir": "/"
+                "dockerWorkDir": "/",
+                "useCache": false
               }
             },
             "buildConfiguration": {
@@ -136,7 +137,9 @@
               "branchRestrictions": [
                 "master"
               ]
-            }
+            },
+            "description": "",
+            "buildArguments": {}
           }
         },
         {
@@ -165,10 +168,18 @@
                 "name": "p01",
                 "internalPort": 3000,
                 "public": true,
-                "protocol": "HTTP"
+                "protocol": "HTTP",
+                "security": {
+                  "credentials": [],
+                  "policies": []
+                },
+                "domains": [],
+                "disableNfDomain": false
               }
             ],
-            "healthChecks": []
+            "healthChecks": [],
+            "description": "",
+            "runtimeEnvironment": {}
           }
         },
         {
