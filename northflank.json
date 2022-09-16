@@ -119,8 +119,7 @@
             },
             "vcsData": {
               "projectUrl": "https://github.com/northflank-examples/remix-postgres-redis-demo",
-              "projectType": "github",
-              "accountLogin": "northflank-examples"
+              "projectType": "github"
             },
             "buildSettings": {
               "dockerfile": {
